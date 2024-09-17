@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каменный ковер</title>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
     <header class="header">
@@ -30,30 +32,30 @@
             <p class="main-section_p">
                 Покрытие из смеси частиц природного происхождения с прозрачным полимером
             </p>
-            <button class="main-section_button">
+            <a href="#" class="main-section_button button">
                 подобрать каменный ковер
-            </button>
+            </a>
         </section>
         <section class="section-img">
             <ul class="section-img_list">
                 <li class="section-img_list-item">
                     <h3 class="section-img_list-item-h3">
-                        Опытные мастера
+                        Опытные <br> мастера
                     </h3>
                 </li>
                 <li class="section-img_list-item">
                     <h3 class="section-img_list-item-h3">
-                        Большой выбор материалов
+                        Большой выбор <br> материалов
                     </h3>
                 </li>
                 <li class="section-img_list-item">
                     <h3 class="section-img_list-item-h3">
-                        Доступна оптовая закупка
+                        Доступна оптовая <br> закупка
                     </h3>
                 </li>
                 <li class="section-img_list-item">
                     <h3 class="section-img_list-item-h3">
-                        Быстрая доставка
+                        Быстрая <br> доставка
                     </h3>
                 </li>
             </ul>
@@ -73,9 +75,9 @@
                         с фракцией от 2 до 8 мм. Покрытие имеет премиальный внешний вид, отличные декоративные характеристики 
                         и высокие прочностные качества
                     </p>
-                    <button class="section-description_list-item-button">
+                    <a href="#" class="section-description_list-item-button button">
                         купить каменный ковер
-                    </button>
+                    </a>
                 </li>
                 <li class="section-description_list-item">
                     <h3 class="section-description_list-item-h3">
@@ -219,14 +221,14 @@
                     <h3 class="section-aplication_list-item-h3">
                         Парковки
                     </h3>
-                    <p class="section-aplication_list-item-p">
-                        (ступеньки, тропинки, отмостки)
-                    </p>
                 </li>
                 <li class="section-aplication_list-item">
                     <h3 class="section-aplication_list-item-h3">
                         Придомовые территории
                     </h3>
+                    <p class="section-aplication_list-item-p">
+                        (ступеньки, тропинки, отмостки)
+                    </p>
                 </li>
                 <li class="section-aplication_list-item">
                     <h3 class="section-aplication_list-item-h3">
@@ -305,10 +307,10 @@
                 Проконсультируем касательно цен, объема работ
                 и доставки, а также поможем с подбором материалов
             </p>
-            <input type="text"  placeholder="Ваше имя">
-            <input type="text" placeholder="Электронная почта">
-            <input type="text" placeholder="Номер телефона">
-            <button>
+            <input class="section-feedback_input" type="text"  placeholder="Ваше имя">
+            <input class="section-feedback_input" type="text" placeholder="Электронная почта">
+            <input class="section-feedback_input" type="text" placeholder="Номер телефона">
+            <button class="section-feedback_button button">
                 Отправить
             </button>
             <p class="section-feedback_paragraph">
@@ -322,35 +324,43 @@
         </h2>
         <ul class="footer_list">
             <li class="footer_list-item">
-                <h3>
+                <h3 class="footer_list-item-h3">
                     Городской
                 </h3>
-                <a href="tel: 88127150002">
+                <a class="footer_list-item-link" href="tel: 88127150002">
                     +7 (812) 715-00-02
                 </a>
             </li>
             <li class="footer_list-item">
-                <h3>
+                <h3 class="footer_list-item-h3">
                     Мобильный
                 </h3>
-                <a href="tel: 89046497179">
+                <a class="footer_list-item-link" href="tel: 89046497179">
                     +7 (904) 649-71-79
                 </a>
             </li>
             <li class="footer_list-item">
-                <h3>
+                <h3 class="footer_list-item-h3">
                     WhatsApp
                 </h3>
-                <a href="tel: 89046495742">
+                <a class="footer_list-item-link" href="tel: 89046495742">
                     +7 (904) 649-57-42
                 </a>
             </li>
             <li class="footer_list-item">
-                <button class="footer_list-item-button">
+                <button class="footer_list-item-button button">
                     заказать звонок
                 </button>
             </li>
         </ul>
     </footer>
+    <div class="modal close-modal">
+        <h2 class="modal_h2">
+            Спасибо за заполнение <br> заявки
+        </h2>
+        <p class="modal_p">
+            Менеджер свяжется с Вами в течении 00 минут 
+        </p>
+    </div>
 </body>
 </html>
