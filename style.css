@@ -17,16 +17,13 @@
   }
   
   body {
-    width: 100%;
     min-height: 100%;
     background-color: #F5F5F5;
     min-width: 320px;
-    max-width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
     color: #1e1e1e;
-    ;
   }
   button,
   a{
@@ -57,6 +54,8 @@
     background-image: url("./img/png/image.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 498px;
+    border-radius: 25px;
   }
   .main-section_h1{
     font-family: "Roboto", sans-serif;
@@ -65,6 +64,8 @@
     line-height: 75px;
     color: #fff;
     text-transform: uppercase;
+    padding-top: 97px;
+    padding-left: 38px;
   }
   .main-section_p{
     font-family: "Roboto", sans-serif;
@@ -73,6 +74,9 @@
     line-height: 37px;
     color: #fff;
     width: 626px;
+    padding-left: 38px;
+    margin-top: 30px;
+    margin-bottom: 120px;
   }
   .main-section_button{
     font-family: "Roboto", sans-serif;
@@ -81,9 +85,25 @@
     line-height: 37px;
     color: #fff;
     background-color: #9a8265;
-    padding: 45px 25px 45px;
+    padding: 25px 45px 25px;
     text-transform: uppercase;
     box-sizing: border-box;
+    border-radius: 60px;
+  }
+  .section-img{
+    margin-top: 89px;
+    margin-bottom: 90px;
+  }
+  .section-img_list{
+    display: flex;
+    justify-content: center;
+    gap: 144px;
+  }
+  .section-img_list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .section-img_list-item-h3{
     font-family: "Roboto", sans-serif;
@@ -93,6 +113,12 @@
     color: #9a8265;
     text-align: center;
     display: flex;
+    margin-top: 20px;
+  }
+  .section-description_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 87px;
   }
   .section-description_list-item-h2{
     font-family: "Roboto", sans-serif;
@@ -100,6 +126,7 @@
     font-size: 64px;
     line-height: 75px;
     color: #1e1e1e;
+    margin-bottom: 25px;
   }
   .section-description_list-item-p{
     font-family: "Roboto", sans-serif;
@@ -107,6 +134,7 @@
     font-size: 20px;
     line-height: 23px;
     color: #1e1e1e;
+    margin-bottom: 25px;
   }
   .section-description_list-item-button{
     font-family: "Roboto", sans-serif;
@@ -115,9 +143,11 @@
     line-height: 37px;
     color: #fff;
     background-color: #9a8265;
-    padding: 45px 25px 45px;
+    padding: 25px 45px 25px;
     text-transform: uppercase;
     box-sizing: border-box;
+    border-radius: 60px;
+    display: inline-block;
   }
   .section-description_list-item-h3{
     font-family: "Roboto", sans-serif;
@@ -125,20 +155,30 @@
     font-size: 32px;
     line-height: 37px;
     color: #1e1e1e;
+    margin-bottom: 20px;
   }
   .section-description_list-item1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1e1e1e;
+  }
+  .section-description_list-item1:nth-child(1){
+    margin-bottom: 20px;
+  }
+  .section-description_list-item1:nth-child(2){
+    margin-bottom: 20px;
+  }
+  .section-description_list-item1-span{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     color: #1e1e1e;
   }
-  .section-description_list-item1-span{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #1e1e1e;
+  .section-review{
+    margin-bottom: 80px;
   }
   .section-review_h2{
     font-family: "Roboto", sans-serif;
@@ -146,6 +186,8 @@
     font-size: 48px;
     line-height: 56px;
     color: #1e1e1e;
+    text-align: center;
+    margin-bottom: 60px;
   }
   .swiper-slide-h3{
     font-family: "Roboto", sans-serif;
@@ -154,12 +196,17 @@
     line-height: 28px;
     color: #1e1e1e;
   }
+  .swiper-slide-list1{
+    display: flex;
+    gap: 24px;
+  }
   .swiper-slide-p{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
     color: #000;
+    margin-bottom: 15px;
   }
   .section-aplication_h2{
     font-family: "Roboto", sans-serif;
@@ -167,6 +214,9 @@
     font-size: 48px;
     line-height: 56px;
     color: #1e1e1e;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
   }
   .section-aplication_p{
     font-family: "Roboto", sans-serif;
@@ -174,6 +224,9 @@
     font-size: 20px;
     line-height: 23px;
     color: #1e1e1e;
+    width: 855px;
+    display: flex;
+    justify-content: center;
   }
   .section-aplication_list-item-h3{
     font-family: "Roboto", sans-serif;
@@ -304,4 +357,31 @@
   }
   .header{
     margin-bottom: 18px;
+  }
+  .swiper--margin{
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+  .list-review{
+    display: flex;
+    gap: 24px;
+    border-radius: 8px;
+    padding: 25px 17px 25px;
+    gap: 24px;
+  }
+  .list-item-review{
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .list-item-review--flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+  .swiper-slide{
+    margin-left: 20px;
+  }
+  .swiper-slide-list{
+    display: flex;
   }
