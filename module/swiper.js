@@ -22,6 +22,15 @@ const slider = () => {
     pagination: {
       el: '.swiper-pagination',
     },
+    breakpoints: {
+      360: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    }
   });
 
   export { slider }
