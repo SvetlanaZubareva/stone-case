@@ -53,7 +53,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #9a8265;
+    color: #fff;
   }
   .main-section{
     background-image: url("./img/png/image.png");
@@ -71,7 +71,7 @@
     line-height: 75px;
     color: #fff;
     text-transform: uppercase;
-    padding-top: 97px;
+    padding-top: 53px;
     padding-left: 38px;
   }
   .main-section_p{
@@ -423,11 +423,14 @@
     text-align: end;
     border-radius: 12px;
     margin-bottom: 150px;
+    display: flex;
+    justify-content: end;
   }
   .section-feedback_div{
     display: flex;
     flex-direction: column;
     align-items: end;
+    width: 40%;
   }
   .section-feedback_h2{
     font-family: "Roboto", sans-serif;
@@ -551,6 +554,8 @@
   }
   .header_list{
     display: flex;
+    padding: 28px 46px 0;
+    color: #fff;
   }
   .header{
     margin-bottom: 18px;
@@ -634,7 +639,51 @@
   .close-modal{
     display: none;
   }
-
+  .section-aplication_list-item:hover{
+    padding: 5px;
+  }
+  .section-feedback_div-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-feedback_input--checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .section-feedback_input--checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .section-feedback_input--checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #fff;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 60px;
+    background-color: #fff;
+  }
+  .section-feedback_input--checkbox:checked+label::before {
+    border-color: #a81616;
+    background-color: #a81616;
+  }
+  .section-feedback_input--checkbox:not(:disabled):active+label::before{
+    border-color: #a81616;
+    background-color: #a81616;
+  }
+  label{
+    cursor: pointer;
+  }
  @media(max-width:768px){
   .body{
     padding: 11px 15px 0;;
@@ -737,6 +786,9 @@
   .section-aplication_list{
     flex-wrap: wrap;
   }
+  .section-aplication_list-item:hover{
+    padding: 10px;
+  }
   .section-aplication_list-item:nth-child(1){
     width: 100%;
   }
@@ -833,5 +885,8 @@
   position: absolute;
   top: 110%;
   left: 50%;
+}
+.section-feedback_div{
+  width: 40%;
 }
 }
