@@ -151,40 +151,36 @@
                 </li>
             </ul>
         </section>
-        <div class="swiper swiper--margin">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 10.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 11.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 12.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 10.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 11.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/png/Frame 12.png" alt="">
-              </div>
-              ...
+        <div class="swiper-wrapper_container">
+            <div class="swiper swiper--margin">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 10.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 11.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 12.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 10.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 11.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/png/Frame 12.png" alt="">
+                  </div>
+               
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-            <div class="swiper-button-next swiper-button-next1"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+            <div class="swiper-button-prev swiper-button-prev1" id="swiper-button-prev1"></div>
+            <div class="swiper-button-next swiper-button-next1" id="swiper-button-next1"></div>
+            <div class="swiper-pagination" id="pagination"></div>
+        </div>
         <section class="section-review">
             <h2 class="section-review_h2">
                 отзывы
@@ -401,15 +397,13 @@
                         После окончания работ Вы проверяете качество выполненных работ
                         и оплачиваете наши услуги
                     </p>
-                    <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="section-order--display-desctop" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="section-order--display-mobile" width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.61523 22.6155L12.6152 13.0001L2.61523 3.38471" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <!-- <li class="section-order_list-item">
-                    <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.61523 22.6155L12.6152 13.0001L2.61523 3.38471" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
-                    </svg>
-                </li> -->
                 <li class="section-order_list-item">
                     <h3 class="section-order_h3">
                         Согласование
@@ -428,12 +422,15 @@
                     <p class="section-order_p">
                         В назначенное время к Вам приедет бригада и привезет необходимое оборудование
                     </p>
-                    <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="section-order--display-mobile" width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.61523 22.6155L12.6152 13.0001L2.61523 3.38471" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="section-order--display-desctop" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
                 <li class="section-order_list-item">
-                    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="section-order--display-mobile" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.2308 13.6152L12.6154 3.61523L3 13.6152" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                     <h3 class="section-order_h3">
@@ -442,6 +439,9 @@
                     <p class="section-order_p">
                         На объект выезжает наш специалист для оценки масштаба и сроков проведения работ
                     </p>
+                    <svg class="section-order--display-desctop" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
                 </li>
                 <li class="section-order_list-item">
                     <h3 class="section-order_h3">
@@ -513,8 +513,7 @@
             </li>
         </ul>
     </footer>
-    <section class="section- modal close-modal">
-        <div class="backdrop"></div>
+    <section class="section- modal close-modal modal">
         <div class="modal">
             <h2 class="modal_h2">
                 Спасибо за заполнение <br> заявки

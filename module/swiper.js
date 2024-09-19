@@ -13,7 +13,7 @@ const slider = () => {
     loop: true,
     slidesPerView: 4,
     observer: true,
-    spaceBetween: 24,
+    spaceBetween: 15,
     
     navigation: {
         nextEl: '.swiper-button-next1',

@@ -22,6 +22,7 @@
     min-width: 320px;
     margin: 0 auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: "Roboto", sans-serif;
     color: #1e1e1e;
   }
@@ -197,6 +198,40 @@
     text-align: center;
     margin-bottom: 60px;
   }
+  .swiper-wrapper_container{
+    position: relative;
+  }
+  #swiper-button-prev1{
+    width: 48px;
+    height: 48px;
+    border-radius: 60px;
+    background-color: rgba(30, 30, 30, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    --swiper-navigation-size: 25px;
+    left: 30px;
+  }
+  #swiper-button-next1{
+    width: 48px;
+    height: 48px;
+    border-radius: 60px;
+    background-color: rgba(30, 30, 30, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    --swiper-navigation-size: 25px;
+  }
+  #pagination{
+    top: 510px;
+  }
+  #pagination span{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(154, 130, 101, 1);
+  }
   .swiper-slide-h3{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -349,26 +384,6 @@
     position: absolute;
     bottom: 110%;
   }
-  /* .section-order_list-item:nth-child(3){
-    background-color: inherit;
-    width: 19px;
-  }
-  .section-order_list-item:nth-child(9){
-    background-color: inherit;
-    width: 19px;
-  }
-  .section-order_list-item:nth-child(5){
-    background-color: inherit;
-    width: 30%;
-  }
-  .section-order_list-item:nth-child(6){
-    background-color: inherit;
-    width: 30%;
-  }
-  .section-order_list-item:nth-child(7){
-    background-color: inherit;
-    width: 30%;
-  } */
   .section-order_h2{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -473,6 +488,7 @@
     width: 80%;
     margin-top: 100px;
     margin-bottom: 150px;
+    align-items: center;
   }
   .footer_list-item{
     text-align: center;
@@ -589,6 +605,36 @@
   .main-section_button--display{
     display: none;
   }
+  .footer_list-item--img{
+    width: 50px;
+    height: 50px;
+  }
+  .section-order--display-desctop{
+    display: none;
+  }
+  .modal{
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(154, 130, 101, 1); /* цвет фона */
+    z-index: 1050;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 20% 0 20%;
+    background-image: url("./img/png/advantages\ 1.png");
+    height: 600px;
+    width: 100%;
+  }
+  .close-modal{
+    display: none;
+  }
+
  @media(max-width:768px){
   .body{
     padding: 11px 15px 0;;
@@ -635,9 +681,9 @@
     margin-bottom: 44px;
   }
   .section-img_list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 53px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
   .section-description_list{
     grid-template-columns: 1fr;
@@ -751,5 +797,41 @@
  }
  .list-review{
   flex-direction: column;
+}
+#pagination{
+  top: 210px;
+}
+#swiper-button-next1{
+  width: 40px;
+  height: 40px;
+}
+#swiper-button-prev1{
+  width: 40px;
+  height: 40px;
+}
+#pagination span {
+  width: 14px;
+  height: 14px;
+}
+.section-order--display-mobile{
+  display: none;
+}
+.section-order--display-desctop{
+  display: block;
+}
+.section-order_list-item:nth-child(2) svg{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+}
+.section-order_list-item:nth-child(4) svg{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+}
+.section-order_list-item:nth-child(5) svg{
+  position: absolute;
+  top: 110%;
+  left: 50%;
 }
 }
