@@ -44,13 +44,11 @@ window.onload = () => {
 
     // код для окрашивания placeholder в красный при клике по кнопке 
       form.addEventListener('submit', (evt) => {
-        debugger
         // Отменяем действие по умолчанию
         evt.preventDefault();
         
         // Проверяем, что поля заполнены
         if (input.value === '') {
-          debugger
           // pl.innerHTML = fontcolor("green");
           input.classList.add('input--color');
           button.classList.add('button-disabled');
@@ -71,15 +69,16 @@ window.onload = () => {
         if (input.value === '' || inputEmail.value === '' || inputTelephone.value === '') {
           return
         } else{
-          // form.submit();
           modal.classList.remove('close-modal');
           modal.classList.add('open-modal');
           const timerId = setTimeout(() => {
             modal.classList.remove('open-modal');
             modal.classList.add('close-modal');
+            form.submit();
           }, 2000)
 }
       });
+
 
   // анимация для элементов
       const observer = new IntersectionObserver(entries => {

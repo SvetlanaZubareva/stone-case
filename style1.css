@@ -162,6 +162,7 @@
     box-sizing: border-box;
     border-radius: 60px;
     display: inline-block;
+    margin: 0 auto;
   }
   .section-description_list-item-h3{
     font-family: "Century Gothic", sans-serif;
@@ -603,7 +604,7 @@
   .footer_list-item--img{
     margin-bottom: 10px;
   }
-  .modal{
+  .section-modal{
     background-image: url("./img/png/advantages\ 1.png");
     width: 100%;
     height: 618px;
@@ -863,6 +864,7 @@
     background-size: cover;
     height: 100%;
 }
+
 .section-feedback_h2{
   font-size: 54px;
   line-height: 64px;
