@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каменный ковер</title>
     <link rel="stylesheet" href="font/font.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="body">
     <header class="header">
-        <!-- <nav class="header_nav">
-            <ul class="header_list">
-                <li class="header_list-item">
-                    <a class="header_list-item-link" href="#">
-                        Главная
-                    </a>
-                </li>
-                <li class="header_list-item">
-                    <a class="header_list-item-link" href="#">
-                        /каменный ковер
-                    </a>
-                </li>
-            </ul>
-        </nav> -->
+        <!-- <section class="main-section">
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="header_list-item">
+                        <a class="header_list-item-link" href="#">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-item-link" href="#">
+                            /каменный ковер
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="main-section_h1">
+                Каменный ковер
+            </h1>
+            <p class="main-section_p">
+                Покрытие из смеси частиц природного происхождения с прозрачным полимером
+            </p>
+            <div class="main-section_button--map">
+                <a href="#" class="main-section_button button" id="main-section_button">
+                    подобрать каменный ковер
+                </a>
+            </div>
+        </section> -->
+    </header>
+    <main class="main">
         <section class="main-section">
             <nav class="header_nav">
                 <ul class="header_list">
@@ -45,23 +60,12 @@
             <p class="main-section_p">
                 Покрытие из смеси частиц природного происхождения с прозрачным полимером
             </p>
-            <a href="#" class="main-section_button button">
-                подобрать каменный ковер
-            </a>
+            <div class="main-section_button--map">
+                <a href="#" class="main-section_button button" id="main-section_button">
+                    подобрать каменный ковер
+                </a>
+            </div>
         </section>
-    </header>
-    <main class="main">
-        <!-- <section class="main-section">
-            <h1 class="main-section_h1">
-                Каменный ковер
-            </h1>
-            <p class="main-section_p">
-                Покрытие из смеси частиц природного происхождения с прозрачным полимером
-            </p>
-            <a href="#" class="main-section_button button">
-                подобрать каменный ковер
-            </a>
-        </section> -->
         <section class="section-img">
             <a href="#" class="main-section_button--display button">
                 подобрать каменный ковер
@@ -402,7 +406,7 @@
                 Как заказывать покрытие 
             </h2>
             <ul class="section-order_list"> 
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation">
                     <h3 class="section-order_h3">
                         Звонок в компанию
                     </h3>
@@ -414,7 +418,7 @@
                         <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation4">
                     <h3 class="section-order_h3">
                         Проверка и оплата
                     </h3>
@@ -429,7 +433,7 @@
                         <path d="M2.61523 22.6155L12.6152 13.0001L2.61523 3.38471" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation5">
                     <h3 class="section-order_h3">
                         Согласование
                     </h3>
@@ -440,7 +444,7 @@
                         <path d="M3.38464 2.61523L13 12.6152L22.6154 2.61523" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation2">
                     <h3 class="section-order_h3">
                         Выезд специалиста
                     </h3>
@@ -454,7 +458,7 @@
                         <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation3">
                     <svg class="section-order--display-mobile" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.2308 13.6152L12.6154 3.61523L3 13.6152" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
@@ -468,7 +472,7 @@
                         <path d="M3 3L12.6154 13L22.2308 3" stroke="#A81616" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </li>
-                <li class="section-order_list-item">
+                <li class="section-order_list-item animation6">
                     <h3 class="section-order_h3">
                         Гарантия
                     </h3>
@@ -487,18 +491,21 @@
                     Проконсультируем касательно цен, объема работ
                     и доставки, а также поможем с подбором материалов
                 </p>
-                <input class="section-feedback_input" type="text"  placeholder="Ваше имя" required>
-                <input class="section-feedback_input" type="text" placeholder="Электронная почта" required>
-                <input class="section-feedback_input" type="text" placeholder="Номер телефона" required>
-                <button class="section-feedback_button button">
-                    Отправить
-                </button>
-                <div class="section-feedback_div-input">
-                    <input class="section-feedback_input--checkbox" type="checkbox" name="input" id="test1">
-                    <label id="test1" for="input"></label>
-                    <p class="section-feedback_paragraph">
-                        Нажимая кнопку “Отправить”, вы соглашаетесь с Условиями соглашения
-                    </p>
+                <div class="div-form">
+                    <form class="section-feedback_form form" action="">
+                        <input class="section-feedback_input input" type="text"  placeholder="Ваше имя" minlength="2" maxlength="32" id="1">
+                        <input class="section-feedback_input input-email" type="text" placeholder="Электронная почта">
+                        <input class="section-feedback_input input-telephone" type="text" placeholder="Номер телефона">
+                        <button class="section-feedback_button button">
+                            Отправить
+                        </button>
+                        <div class="section-feedback_div-input">
+                            <input class="section-feedback_input--checkbox" type="checkbox" name="test1" id="test1">
+                            <label class="section-feedback_paragraph" id="test1" for="test1">
+                                Нажимая кнопку “Отправить”, вы соглашаетесь с Условиями соглашения
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -542,7 +549,7 @@
             </li>
         </ul>
     </footer>
-    <section class="section- modal close-modal modal">
+    <section class="section-modal close-modal modal">
         <div class="modal">
             <h2 class="modal_h2">
                 Спасибо за заполнение <br> заявки
@@ -553,6 +560,6 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./module/script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
